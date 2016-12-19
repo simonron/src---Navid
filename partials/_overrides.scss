@@ -1,0 +1,28 @@
+	.container {
+		//bootstrap overrides area
+		@include container-fixed;
+		@media (min-width: $screen-sm) {
+			width: 95%;
+		}
+		@media (min-width: $screen-md) {
+			width: $screen-md;
+		}
+		@media (min-width: $screen-lg-min) {
+			width: $container-lg;
+		}
+	}
+	/* +++++++++++++++++++++++++++++++++++++ */
+	/* +++++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++
+Site specific settings 
++++++++++++++++++++++++++++ */
+	/*#myCarousel{
+	.item img{
+	width:330px;
+		height:330px;
+	}
+}*/
+	.main-menu ul {
+		background: #000;
+		border-radius: 10px;
+	}

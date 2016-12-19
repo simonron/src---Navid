@@ -4,8 +4,10 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-mincer";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../partials/susyConfig";
+@import "../partials/glyphicons";
 @import "../partials/grids";
 @import "../partials/layout";
 @import "../partials/vast";
@@ -19,5 +21,6 @@
 @import "../partials/menu";
 @import "../partials/SRAmenu";
 @import "../partials/overrides";
-
+  
+   
 

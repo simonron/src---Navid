@@ -78,7 +78,6 @@ gulp.task('sass', function () {
 		.pipe(csso())
 		// Writes sourcemaps into the CSS file
 		.pipe(sourcemaps.write())
-
 		.pipe(gulp.dest(outputDir + "css/"))
 		.pipe(connect.reload())
 });

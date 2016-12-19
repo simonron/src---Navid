@@ -116,7 +116,9 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 						
 						<div>
 							<jdoc:include type="modules" name="above_hero" style="xhtml" />
-						</div>
+			
+						
+								</div>
 				
 
 

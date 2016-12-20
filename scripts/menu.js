@@ -1,3 +1,4 @@
+
 var open = false;
 
 function onClickMenu() {
@@ -22,14 +23,11 @@ function openMenu() {
 	console.log("openMenu called");
 
 	scrollPos = jQuery('body').scrollTop();
-/*	jQuery('.cover').animate({
+	jQuery('.cover').animate({
 		left: '80%'
-	});*/
-	jQuery('.mobile-sidebar-left').animate({
-		left: '0%'
 	});
 	jQuery('.mobile-menu-bar').animate({
-		left: '0%'
+		left: '80%'
 	});
 	//jQuery('.off-screen-left').css('display', 'block');
 	jQuery('.off-screen-left').animate({
@@ -40,7 +38,8 @@ function openMenu() {
 		top: -(document.body.scrollTop)
 	});
 	jQuery(".body").on("touchmove", false);
-	jQuery('.cover').animate({opacity:"0.8"});
+	//jQuery('.cover').fadeIn(.8);
+	Query('.cover').fadeIn(.8);
 	//jQuery('.fadeout').fadeOut();
 	open = true;
 }
@@ -48,14 +47,9 @@ function openMenu() {
 function closeMenu() {
 
 	console.log("closeMenu called");
-	
-	jQuery('.mobile-sidebar-left').animate({
-		left: '-80%'
-	});
-	
-/*	jQuery('.cover').animate({
+	jQuery('.cover').animate({
 		left: '0%'
-	});*/
+	});
 	jQuery('.mobile-menu-bar').animate({
 		left: '0%'
 	});
@@ -67,7 +61,7 @@ function closeMenu() {
 	});
 	jQuery('body').scrollTop(scrollPos);
 	jQuery(".body").off("touchmove", false);
-		jQuery('.cover').animate({opacity:"0"})
-	jQuery('.fadeout').fadeIn();
+	//jQuery('.cover').fadeOut();
+	//jQuery('.fadeout').fadeIn();
 	open = false;
 }

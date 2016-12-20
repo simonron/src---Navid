@@ -11,6 +11,7 @@
 	position: absolute;
 	left:-80%;
 }
+
 @include breakpoint($medium) {
 	.mobile-sidebar-left {
 		position: absolute;
@@ -26,8 +27,9 @@
 }
 @include breakpoint($large) {
 	.mobile-menu-bar,
-	.mobile-sidebar-left {
-		display: none;
+	.mobile-sidebar-left,
+	.cover{
+		display: none !important;
 	}
 	.main-menu {
 		display: block;

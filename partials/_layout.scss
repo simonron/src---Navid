@@ -9,30 +9,31 @@ joomla layout
 
 @include breakpoint($medium) {
 	#sidebar {
-		@include span(2 of 10);
+		@include span(full);
 		transition: all 1.5s ease-in-out;
-		background: #888;
+		background: #eee;
 	}
 	#content {
-		@include span(8 of 10 last);
+		@include span(8 of 10 );
 		transition: all 1.5s ease-in-out;
 		@include clearfix;
 		background: #aaa;
 	}
 	.right-sidebar {
-		@include span(1 of 1 last);
+		@include span(2 of 10 last);
 		transition: all 1.5s ease-in-out;
 		background: #d44;
 	}
 }
 @include breakpoint($large) {
 	#sidebar {
-		@include span(2 of 12);
+		@include span(4 of 12 );
 		transition: all 1.5s ease-in-out;
 		background: #eee;
+		display:block;
 	}
 	#content {
-		@include span(8 of 12);
+		@include span(6 of 12);
 		transition: all 1.5s ease-in-out;
 		@include clearfix;
 		background: #ddd;

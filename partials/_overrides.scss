@@ -1,4 +1,11 @@
-	.container {
+body{
+		-webkit-transition: all 2.5s ease;
+	-moz-transition: all 2.5s ease;
+	-ms-transition:all 2.5s ease;
+	-o-transition: all 2.5s ease;
+}
+
+.container {
 		//bootstrap overrides area
 		@include container-fixed;
 		@media (min-width: $screen-sm) {

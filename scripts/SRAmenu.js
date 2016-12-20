@@ -373,7 +373,7 @@ function openMenu() {
 		top: -(document.body.scrollTop)
 	});
 	jQuery(".body").on("touchmove", false);
-	jQuery('.cover').fadeIn();
+	jQuery('.cover').fadeIn(.8);
 	jQuery('.fadeout').fadeOut();
 	open = true;
 }

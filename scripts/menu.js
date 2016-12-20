@@ -29,7 +29,7 @@ function openMenu() {
 		left: '0%'
 	});
 	jQuery('.mobile-menu-bar').animate({
-		left: '80%'
+		left: '0%'
 	});
 	//jQuery('.off-screen-left').css('display', 'block');
 	jQuery('.off-screen-left').animate({

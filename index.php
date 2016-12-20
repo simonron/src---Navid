@@ -70,25 +70,25 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 	</head>
 
 	<body>
-	<div class="site wrapper">
-		
+		<div class="site wrapper">
+
 			<!-- Mobile sidebar -->
 			<div class='mobile-sidebar-left'>
-					<jdoc:include type="modules" name="mobile_sidebar_left" />
+				<jdoc:include type="modules" name="mobile_sidebar_left" />
 			</div>
 
 			<div class='cover' onclick='onClickCover()'></div>
 
 			<!-- Mobile Menu Button -->
 			<div class='mobile-menu-bar'>
-				<div class='mobile-menu-button' onclick='onClickMenu();'><span>&#9776;</span></div>
+				<div class='mobile-menu-button' onclick='onClickMenu();'><span><h1>&nbsp;&#9776;</h1></span></div>
 			</div>
 			<div id="mask" onClick="desktop_reset()"></div>
 
 
 			<!-- Body -->
 			<div class="body">
-						<span id="top_of_site"></span>
+				<span id="top_of_site"></span>
 				<div class="container">
 
 					<!-- Header -->
@@ -100,8 +100,14 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 							<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription'), ENT_COMPAT, 'UTF-8') . '</div>'; ?>
 						<?php endif; ?>-->
 							</a>
-							<div class="header-search top-logo">
+							<div class="header-search">
+								<jdoc:include type="modules" name="header_search" style="xhtml" />
+							</div>
+							<div class="top-logo">
 								<jdoc:include type="modules" name="top_logo" style="xhtml" />
+							</div>
+							<div class="top-login">
+								<jdoc:include type="modules" name="top_login" style="xhtml" />
 							</div>
 						</div>
 					</header>
@@ -110,25 +116,24 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 					<nav class="navigation" role="navigation">
 						<div class="main-menu ">
 							<jdoc:include type="modules" name="main_menu" style="xhtml" />
-				
+
 						</div>
-							</nav>
-						
-						<div>
-							<jdoc:include type="modules" name="above_hero" style="xhtml" />
-			
-						
-								</div>
-				
+					</nav>
+
+					<div>
+						<jdoc:include type="modules" name="above_hero" style="xhtml" />
+
+
+					</div>
+
 
 
 					<!--			<?php endif; ?>-->
-		
+
 					<jdoc:include type="modules" name="hero" style="xhtml" />
 
 
 					<div id="main_block">
-
 
 						<!-- Begin Sidebar -->
 						<div id="sidebar">

@@ -30,38 +30,3 @@
 
 /******** Susy grid layout override ******************************/
 
-.mobile-menu-bar {
-	display: none;
-}
-@include breakpoint($exSmall) {
-	.mobile-menu-bar {
-		display: block;
-	}
-	.main-menu {
-		display: none;
-	}
-}
-@include breakpoint($small) {
-	.mobile-menu-bar {
-		display: block;
-	}
-	.main-menu {
-		display: none;
-	}
-}
-@include breakpoint($small-tab) {
-	.mobile-menu-bar {
-		display: block;
-	}
-	.main-menu {
-		display: none;
-	}
-}
-@include breakpoint($medium) {
-	.mobile-menu-bar {
-		display: block;
-	}
-	.main-menu {
-		display: none;
-	}
-}

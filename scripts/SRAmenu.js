@@ -373,8 +373,9 @@ function openMenu() {
 		top: -(document.body.scrollTop)
 	});
 	jQuery(".body").on("touchmove", false);
-	jQuery('.cover').fadeIn(.8);
-	jQuery('.fadeout').fadeOut();
+	//jQuery('.cover').fadeIn(.8);
+	Query('.cover').fadeIn(.8);
+	//jQuery('.fadeout').fadeOut();
 	open = true;
 }
 
@@ -395,8 +396,8 @@ function closeMenu() {
 	});
 	jQuery('body').scrollTop(scrollPos);
 	jQuery(".body").off("touchmove", false);
-	jQuery('.cover').fadeOut();
-	jQuery('.fadeout').fadeIn();
+	//jQuery('.cover').fadeOut();
+	//jQuery('.fadeout').fadeIn();
 	open = false;
 }
 

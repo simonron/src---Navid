@@ -1,5 +1,8 @@
 // Gulpfile
-var env = require('minimist')(process.argv.slice(2)),
+var 	
+  path = require('path'),
+	$path	= require('path'),
+	env = require('minimist')(process.argv.slice(2)),
 	gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	imagemin = require('gulp-imagemin'),
@@ -17,7 +20,6 @@ var env = require('minimist')(process.argv.slice(2)),
 	express = require('express'),
 	app = express(),
 	marked = require('marked'),  
-	path = require('path'),
 	neat = require('node-neat').includePaths,
 	server = tinylr(),
 	sourcemaps = require('gulp-sourcemaps'),
